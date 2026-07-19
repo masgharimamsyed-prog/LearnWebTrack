@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learn Web Track - Grow With Consious</title>
+    <link rel="icon" href="./assets/nav-bar/main-logo.png">
+    <link rel="stylesheet" href="dashboard.css">
+    <link rel="stylesheet" href="nav.css">
+    
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.0/css/all.min.css"
+        integrity="sha512-ApSLB1Pd3/bZN8fWB/RG9YhN/7bd9Hkf3AGaE2mPfebjrxagjuBtx2GcgdqIlJkUzwylBo61r9Xa9NmgBI0swA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <!--nav bar (similar to all pages)-->
+    <nav id="nav-bar">
+        <div id="main-container"><img src="./assets/nav-bar/main-logo.png">
+            <h1 id="main-heading">Learn<span style="color: rgb(147, 127, 246)">Web</span>Track</h1>
+        </div>
+        <ul id="dashboard-item-container">
+            <li class="dashboard-item"><a href=""><i class="fa-solid fa-house"></i>DashBoard</a></li>
+            <li class="dashboard-item"><a href=""><i class="fa-solid fa-timeline"></i>Roadmap</a></li>
+            <li class="dashboard-item"><a href=""><i class="fa-solid fa-list-check"></i>Topics</a></li>
+            <li class="dashboard-item"><a href=""><i class="fa-solid fa-video"></i>Lectures</a></li>
+            <li class="dashboard-item"><a href=""><i class="fa-solid fa-stopwatch"></i>Study Timer</a></li>
+            <li class="dashboard-item"><a href="./achievements.html"><i class="fa-solid fa-award"></i>Achievements</a></li>
+            <li class="dashboard-item"><a href=""><i class="fa-solid fa-chart-line"></i>Study Statistics</a></li>
+            <li class="dashboard-item"><a href=""><i class="fa-solid fa-bars-progress"></i>Projects</a></li>
+        </ul>
+    </nav>
+
+    <!--Dashboard-->
+    <div id="dashboard-container">
+        <div id="page-info-container">
+            <h1>Dashboard</h1>
+            <div id="account-info-container">
+                <h5>Asghar Imam</h5>
+                <div id="account-img"></div>
+            </div>
+        </div>
+
+        <div id="welcome-container">
+            <h3 id="greeting-heading">Good Evening,Asghar!&#128075;</h3>
+            <h3 id="compliment-heading">Keep Learning ,keep growing. You're the doing great!</h3>
+        </div>
+
+        <div id="main-overview">
+            <div id="overall-progress-visuals">
+                <h5>Total Progress<i class="fa-solid fa-circle-info"></i></h5>
+                <span class="overll-progress-no" style="font-size: 3rem;">0%</span>
+                <h5 style="margin:30px 0px">You have completed <span class="lecture-no">0</span> lectures</h5>
+
+                <div id="main-overview-progress-bar">
+                    <div id="main-overview-progress">
+
+                    </div>
+                </div>
+            </div>
+            <div id="overall-progress-facts">
+                <div id="circle-control">
+                    <div id="overall-outer">
+                        <div id="overall-inner">
+                            <span class="overll-progress-no">0%</span>
+                        </div>
+                    </div>
+                </div>
+                <ul>
+                    <li>Total Lectures Completed:<span class="lecture-no">0</span></li>
+                    <li>Total Lectures Remaining:<span class="lecture-no">0</span></li>
+                    <li>Good Journey ,we have to keep it up!</li>
+                </ul>
+
+
+            </div>
+        </div>
+
+        <div id="small-overview">
+            <!--lectures compeleted card-->
+            <div class="small-card" id="lectures-completed">
+                <div class="symbol" style=" background-color: rgb(153, 132, 245,0.5); 
+                       color: rgb(125, 97, 247);">
+                    <i class="fa-solid fa-book"></i>
+                </div>
+                <h6 class="card-main-heading"> Lectures Completed</h6>
+                <span class="small-card-fact" class="lecture-no">0%</span>
+                <h6 class="card-small-heading">of 50</h6>
+            </div>
+            <!--study time compeleted card-->
+            <div class="small-card" id="study-time">
+                <div class="symbol" style=" background-color: yellow; 
+    color:rgb(171, 167, 167)">
+                    <i class="fa-regular fa-clock"></i>
+                </div>
+                <h6 class="card-main-heading">Total Study Time</h6>
+                <span class="small-card-fact" id="study-time-no">0hr</span>
+
+            </div>
+            <!--Total topics card-->
+            <div class="small-card" id="total-topics">
+                <div class="symbol" style=" background-color: rgba(118, 251, 98, 0.5); 
+    color: green">
+                    <i class="fa-brands fa-artstation"></i>
+                </div>
+                <h6 class="card-main-heading">Total Topics</h6>
+                <span class="small-card-fact" id="lecture-no">0</span>
+            </div>
+            <!--total project compeleted card-->
+            <div class="small-card" id="project-made">
+                <div class="symbol" style=" background-color: rgba(241, 175, 61, 0.5); 
+    color: orange">
+                    <i class="fa-solid fa-coins"></i>
+                </div>
+                <h6 class="card-main-heading">Project Made</h6>
+                <span class="small-card-fact" id="lecture-no">0</span>
+            </div>
+        </div>
+
+        <!--overview chart graph-->
+        <div id="progress-overview">
+            <div class="bar" id="html-bar">HTML</div>
+            <div class="bar" id="css-bar">CSS</div>
+            <div class="bar" id="js-bar">JS</div>
+            <div class="bar" id="react-bar">React</div>
+            <div class="bar" id="next-bar">Next</div>
+            <div class="bar" id="node-bar">Node</div>
+            <div class="bar" id="express-bar">Exp</div>
+            <div class="bar" id="sql-bar">SQL</div>
+            <div class="bar" id="mongo-bar">Mongo</div>
+            <div class="bar" id="typescript-bar">TS</div>
+            <div class="bar" id="git">Git</div>
+
+            <div class="bar" id="html-bar">HTML</div>
+            <div class="bar" id="css-bar">CSS</div>
+            <div class="bar" id="js-bar">JS</div>
+            <div class="bar" id="react-bar">React</div>
+            <div class="bar" id="next-bar">Next</div>
+            <div class="bar" id="node-bar">Node</div>
+            <div class="bar" id="express-bar">Exp</div>
+            <div class="bar" id="sql-bar">SQL</div>
+            <div class="bar" id="mongo-bar">Mongo</div>
+            <div class="bar" id="typescript-bar">TS</div>
+            <div class="bar" id="git">Git</div>
+
+        </div>
+
+        <div id="goal-and-motivation">
+            <div id="daily-goal" class="small-card">
+                <div class="symbol" style=" background-color: rgba(250, 113, 86, 0.5); 
+    color:red;">
+                    <i class="fa-solid fa-bullseye"></i>
+                </div>
+                <h6 class="card-main-heading"> Daily Goal</h6>
+                <span class="small-card-fact" id="lecture-no">0%</span>
+            </div>
+
+            <div id="motivation-quote">
+                <h3 style="font-style: italic;">Motivation Quote ~</h3>
+                <p id="quote">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatum magnam, recusandae
+                    dolores fugit eveniet repellat eni</p>
+                <h5 id="author">Me</h5>
+            </div>
+        </div>
+
+    </div>
+</body>
+
+</html>
