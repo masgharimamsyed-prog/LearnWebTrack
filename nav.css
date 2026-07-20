@@ -5,13 +5,12 @@
 }
 
 #nav-bar {
-    width: 15%;
+    width: 200px;
     padding: 20px 10px 0px 10px;
     height: 100vh;
     border-radius: 0.5rem;
     background-image: url('./assets/nav-bar/nav-bar-bg.png');
     backdrop-filter: blur(10px);
-
 }
 
 #main-container {
@@ -70,11 +69,11 @@
     backdrop-filter: blur(10px);
 }
 
-#dashboard-item-container li:active {
+/* #dashboard-item-container li:active {
     background: linear-gradient(90deg,
             rgb(92, 62, 240),
             rgb(129, 97, 255));
-}
+} */
 
 .dashboard-item a {
     color: white;
