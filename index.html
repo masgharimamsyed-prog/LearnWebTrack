@@ -8,7 +8,8 @@
     <link rel="icon" href="./assets/nav-bar/main-logo.png">
     <link rel="stylesheet" href="dashboard.css">
     <link rel="stylesheet" href="nav.css">
-    
+    <link rel="stylesheet" href="rightbar.css">
+
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -32,10 +33,11 @@
             rgb(92, 62, 240),
             rgb(129, 97, 255));"><a href=""><i class="fa-solid fa-house"></i>DashBoard</a></li>
             <li class="dashboard-item"><a href="./roadmap.html"><i class="fa-solid fa-timeline"></i>Roadmap</a></li>
-            <li class="dashboard-item"><a href=""><i class="fa-solid fa-list-check"></i>Topics</a></li>
+            <li class="dashboard-item"><a href="./topics.html"><i class="fa-solid fa-list-check"></i>Topics</a></li>
             <li class="dashboard-item"><a href="./lectures.html"><i class="fa-solid fa-video"></i>Lectures</a></li>
             <li class="dashboard-item"><a href=""><i class="fa-solid fa-stopwatch"></i>Study Timer</a></li>
-            <li class="dashboard-item"><a href="./achievements.html"><i class="fa-solid fa-award"></i>Achievements</a></li>
+            <li class="dashboard-item"><a href="./achievements.html"><i class="fa-solid fa-award"></i>Achievements</a>
+            </li>
             <li class="dashboard-item"><a href=""><i class="fa-solid fa-chart-line"></i>Study Statistics</a></li>
             <li class="dashboard-item"><a href=""><i class="fa-solid fa-bars-progress"></i>Projects</a></li>
         </ul>
@@ -57,109 +59,219 @@
         </div>
 
         <div id="main-overview">
-            <div id="overall-progress-visuals">
-                <h5>Total Progress<i class="fa-solid fa-circle-info"></i></h5>
-                <span class="overll-progress-no" style="font-size: 3rem;">0%</span>
-                <h5 style="margin:30px 0px">You have completed <span class="lecture-no">0</span> lectures</h5>
-
-                <div id="main-overview-progress-bar">
-                    <div id="main-overview-progress">
-
-                    </div>
-                </div>
-            </div>
+            <!--progress -->
             <div id="overall-progress-facts">
+                <nav>
+                    <div class="symbol" style=" background-color: rgb(213, 143, 245); 
+     color:rgb(80, 3, 106)">
+                        <i class="fa-solid fa-circle-info"></i>
+                    </div>
+                    Learning Progress
+                </nav>
+
                 <div id="circle-control">
-                    <div id="overall-outer">
-                        <div id="overall-inner">
-                            <span class="overll-progress-no">0%</span>
-                        </div>
+                    <div>
+                        <span id="total-progress-no">78</span>%
+                        <div>Compeleted</div>
                     </div>
                 </div>
-                <ul>
-                    <li>Total Lectures Completed:<span class="lecture-no">0</span></li>
-                    <li>Total Lectures Remaining:<span class="lecture-no">0</span></li>
-                    <li>Good Journey ,we have to keep it up!</li>
-                </ul>
 
+                <div>
+                    <ul>
+                        <li>Total Lectures completed:<span class="">0</span></li>
+                        <li>Total Projects Made:<span class="">0</span></li>
+                        <li>Total Quiz attempt:<span class="">0</span></li>
+                    </ul>
+                </div>
+
+                <footer>
+                    <div class="symbol" style=" 
+     color:rgb(80, 3, 106)">
+                        <i class="fa-regular fa-clock"></i>
+                    </div>
+                    Great Job !Keep it up to achieve your goal
+                </footer>
 
             </div>
+            <!--Study -->
+            <div id="overall-progress-visuals">
+                <nav>
+                    <div class="symbol" style=" background-color: rgb(213, 143, 245); 
+     color:rgb(80, 3, 106)">
+                        <i class="fa-regular fa-clock"></i>
+                    </div>
+                    Study Hours
+                </nav>
+
+                <div id="study-time">
+                    12:15:11
+                </div>
+
+                <span id="hr">
+                    <div>0</div>
+                    <div>Hours</div>
+                </span>
+                <span id="min">
+                    <div>0</div>
+                    <div>Minutes</div>
+                </span>
+
+            </div>
+
         </div>
 
         <div id="small-overview">
-            <!--lectures compeleted card-->
-            <div class="small-card" id="lectures-completed">
-                <div class="symbol" style=" background-color: rgb(153, 132, 245,0.5); 
-                       color: rgb(125, 97, 247);">
-                    <i class="fa-solid fa-book"></i>
-                </div>
-                <h6 class="card-main-heading"> Lectures Completed</h6>
-                <span class="small-card-fact" class="lecture-no">0%</span>
-            </div>
-            <!--study time compeleted card-->
-            <div class="small-card" id="study-time">
-                <div class="symbol" style=" background-color: yellow; 
-    color:rgb(171, 167, 167)">
+
+            <!--lectures  card-->
+            <div class="small-card" id="quiz-attempt">
+                <div class="symbol" style=" background-color: rgb(213, 143, 245); 
+     color:rgb(80, 3, 106)">
                     <i class="fa-regular fa-clock"></i>
                 </div>
-                <h6 class="card-main-heading">Total Study Time</h6>
-                <span class="small-card-fact" id="study-time-no">0hr</span>
+                <h6 class="card-main-heading">Total Lectures</h6>
+                <span class="small-card-fact">24</span>
+
+            </div>
+
+            <!--quiz attempt compeleted card-->
+            <div class="small-card" id="quiz-attempt">
+                <div class="symbol" style=" background-color: rgb(241, 245, 143); 
+     color:rgb(16, 14, 0)">
+                    <i class="fa-regular fa-clock"></i>
+                </div>
+                <h6 class="card-main-heading">Quiz attempt</h6>
+                <span class="small-card-fact" id="quiz-attempt-no">0</span>
 
             </div>
             <!--Total topics card-->
             <div class="small-card" id="total-topics">
                 <div class="symbol" style=" background-color: rgba(118, 251, 98, 0.5); 
-    color: green">
+      color: green">
                     <i class="fa-brands fa-artstation"></i>
                 </div>
                 <h6 class="card-main-heading">Total Topics</h6>
-                <span class="small-card-fact" id="lecture-no">0</span>
+                <span class="small-card-fact" id="lecture-no">15</span>
+            </div>
+
+
+            <!--total topics cover  card-->
+            <div class="small-card" id="quiz-attempt">
+                <div class="symbol" style=" background-color: rgb(143, 243, 245); 
+     color:rgb(3, 106, 101)">
+                    <i class="fa-regular fa-clock"></i>
+                </div>
+                <h6 class="card-main-heading">Total Topics Cover</h6>
+                <span class="small-card-fact" id="quiz-attempt-no">0</span>
+
             </div>
             <!--total project compeleted card-->
             <div class="small-card" id="project-made">
                 <div class="symbol" style=" background-color: rgba(241, 175, 61, 0.5); 
-    color: orange">
+     color: orange">
                     <i class="fa-solid fa-coins"></i>
                 </div>
                 <h6 class="card-main-heading">Project Made</h6>
                 <span class="small-card-fact" id="lecture-no">0</span>
             </div>
+            <!--daily goal card-->
+            <div id="daily-goal" class="small-card">
+                <div>
+                    <div class="symbol" style=" background-color: rgba(250, 113, 86, 0.5); 
+     color:red;">
+                        <i class="fa-solid fa-bullseye"></i>
+                    </div>
+                    <button class="badge" id="goal-change-btn">Change</button>
+                </div>
+
+                <h6 class="card-main-heading"> Daily Goal</h6>
+                <span class="small-card-fact" id="daily-goal-no">4hrs</span>
+
+            </div>
+
         </div>
 
         <!--overview chart graph-->
-        <div id="progress-overview">
-            <div class="bar" style="background-color: #FF8A3D;" id="html-bar">HTML</div>
-            <div class="bar" id="js-bar">JS</div>
-            <div class="bar" style="background-color: #22C55E;;"id="react-bar">React</div>
-            <div class="bar" style="background-color: #FF8A3D;"id="next-bar">Next</div>
-            <div class="bar" style="background-color: #38BDF8;"id="node-bar">Node</div>
-            <div class="bar" id="express-bar">Exp</div>
-            <div class="bar" id="sql-bar">SQL</div>
-            <div class="bar" style="background-color: #22C55E;"id="mongo-bar">Mongo</div>
-            <div class="bar" id="typescript-bar">TS</div>
-            <div class="bar" style="background-color: #FF8A3D;;"id="git">Git</div>
-
-        </div>
-
-        <div id="goal-and-motivation">
-            <div id="daily-goal" class="small-card">
-                <div class="symbol" style=" background-color: rgba(250, 113, 86, 0.5); 
-    color:red;">
-                    <i class="fa-solid fa-bullseye"></i>
+        <div id="progress-motivation">
+            <div id="progress-overview">
+                <div id="progress-no">
+                    <h6>100%</h6>
+                    <h6>80%</h6>
+                    <h6>60%</h6>
+                    <h6>40%</h6>
+                    <h6>20%</h6>
+                    <h6>0%</h6>
                 </div>
-                <h6 class="card-main-heading"> Daily Goal</h6>
-                <span class="small-card-fact" id="lecture-no">0%</span>
+                <div class="bar" id="html-bar">HTML</div>
+                <div class="bar" id="js-bar">JS</div>
+                <div class="bar" id="react-bar">React</div>
+                <div class="bar" id="next-bar">Next</div>
+                <div class="bar" id="node-bar">Node</div>
+                <div class="bar" id="express-bar">Exp</div>
+                <div class="bar" id="sql-bar">SQL</div>
+                <div class="bar" id="mongo-bar">Mongo</div>
+                <div class="bar" id="typescript-bar">TS</div>
+                <div class="bar" id="git">Git</div>
             </div>
-
             <div id="motivation-quote">
                 <h3 style="font-style: italic;">Motivation Quote ~</h3>
-                <p id="quote">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatum magnam, recusandae
-                    dolores fugit eveniet repellat eni</p>
-                <h5 id="author">Me</h5>
+                <p id="quote"></p>
+                <h5 id="author"></h5>
             </div>
         </div>
 
+
     </div>
+
+
+    <!--Right side bar similar to all-->
+    <div id="right-side-bar">
+        <div id="toast" class="toast">Note Add!</div>
+        <div id="notes-container">
+            <div id="notes-control">
+                <div><i class="fa-solid fa-clipboard-list" style=" color: blueviolet;"></i>Sticky Notes</div><button
+                    id="add-note"><i class="fa-solid fa-plus"></i>Add</button>
+            </div>
+
+            <div id="notes">
+            </div>
+        </div>
+        <div id="js-quiz-box">
+
+            <div id="js-main-detail">
+                <div class="js-badge"><img src="./assets/right-bar/js-icon.png">
+                </div>
+                <div>
+                    <h3>Quiz</h3>
+                    <div class="js-box-detail">Improving your JS Knowledge</div>
+                </div>
+            </div>
+
+            <button id="js-quiz-button"><i class="fa-solid fa-bolt"></i>Generate</button>
+            <span class="js-box-detail" class="lecture-no">Total 15 Challenges to level up</span>
+        </div>
+
+
+        <div id="music-container">
+
+            <audio controls>
+                <source src="https://youtu.be/c92tUshrZ9g?si=FLkJCu-_rh2QqWUt" type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio>
+            <audio controls>
+                <source src="https://youtu.be/7GLCe1ZCjIU?si=FchRntb8E8HJO_sl" type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio>
+            <div id="music-nav">
+                <h3>Relaxing Music</h3>
+            </div>
+
+
+        </div>
+    </div>
+
+    <script src="dashboard.js"></script>
+    <script src="rigthbar.js"></script>
+    <script src="topics.js"></script>
 </body>
 
 </html>

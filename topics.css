@@ -1,0 +1,178 @@
+*{
+    margin: 0;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    overflow: hidden;
+    display: flex;
+}
+#topics-container {
+    width: 70%;
+    height: 100vh;
+    width: 70%;
+    background: linear-gradient(to bottom right,
+            rgb(255, 255, 255) 0%,
+            rgb(245, 240, 254) 30%,
+            rgb(236, 228, 253) 65%,
+            rgb(229, 220, 252) 100%);
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-family: "Manrope", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    padding: 10px 20px;
+    overflow-y: auto;
+    flex-grow: 1;
+}
+#topics-container::-webkit-scrollbar {
+    width: 5px;
+}
+
+#topics-container::-webkit-scrollbar-thumb {
+    background-color: rgb(185, 172, 246);
+    border-radius: 3rem;
+}
+
+#page-info-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: "Poppins", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+
+#detail-container {
+    margin-top: 20px;
+}
+#answer-heading {
+    color: grey;
+    font-size: 0.75rem;
+    margin-top: 5px;
+}
+.grid-container{
+    margin: 10px auto;
+    width:100%;
+    height: 500px;
+    display: grid;
+    grid-template-columns: repeat(6,1fr);
+    grid-template-rows: repeat(6,1fr);
+    gap:10px;
+}
+#html{
+    grid-column:  1/span 3 ;
+    grid-row: 1/span 3;
+}
+#css{
+    grid-column: 1/ span 3;
+    grid-row: 4/span 3;
+}
+#js{
+    grid-row: 1/span 6;
+    grid-column:4/ span 3;
+    
+}
+#boot{
+     grid-column:  1/span 3 ;
+    grid-row: 1/span 3;
+ 
+}
+#tail{
+    grid-column: 4/ span 3;
+    grid-row: 1/span 3;
+}
+#react{
+     grid-row: 4/span 3;
+    grid-column:1/ span 6;
+
+}
+
+#git{
+     grid-column:  1/span 3 ;
+    grid-row: 1/span 6;
+}
+
+#next{
+    grid-column: 4/ span 3;
+    grid-row: 1/span 6;
+}
+
+#node{
+      grid-column:  1/span 6 ;
+    grid-row: 1/span 3;
+}
+
+#exp{
+     grid-column: 1/ span 6;
+    grid-row: 4/span 3;
+
+}
+
+#mongo{
+    grid-column: 1/ span 2;
+    grid-row: 1/span 6;
+}
+
+#api{
+      grid-column:  3/span 4 ;
+    grid-row: 1/span 3;
+
+}
+
+#deploy{
+     grid-column: 3/ span 4;
+    grid-row: 4/span 3;
+}
+
+
+.topic-card{
+    font-family: "Poppins", Helvetica, sans-serif;
+    padding: 5px;
+    border-radius: 0.25rem;
+    background-color: white;
+   
+    
+}
+
+.cards{
+ overflow-y: scroll;
+ height: 150px;
+ overflow-x: hidden;
+}
+
+.card{
+    display: flex;
+    align-items: center;
+    margin-top: 3px;
+    gap:5px;
+
+}
+.card p{
+    font-size: 0.75rem;
+}
+.topic-card h2 i{
+    padding: 3px;
+    margin: 3px;
+    border-radius: 0.12rem;
+}
+.topic-card div{
+    margin-left: 10px;
+    font-weight: bold;
+    font-size: 1.25rem;
+}
+.progress-bar{
+    width:90%;
+    background-color: white;
+    border-radius: 2rem;
+    height: 5px;
+    margin: 5px auto;
+}
+.progress-bar div{
+    height: inherit;
+    width: 1%;
+    border-radius: 2rem;
+    margin: 0;
+
+}

@@ -124,8 +124,8 @@ body {
 
 .lecture-card {
     height: calc(100%-10px);
-    min-width: 200px;
-    max-width: 211px;
+    min-width: 240px;
+    max-width: 241px;
     z-index: 2;
     background-color: white;
     margin-top: 10px;
