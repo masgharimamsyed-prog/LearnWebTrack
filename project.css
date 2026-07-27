@@ -1,0 +1,150 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    overflow: hidden;
+}
+
+#project-container {
+    color: black;
+    height: 100vh;
+    overflow-y: auto;
+    overflow-x: hidden;
+    width: 70%;
+    background: linear-gradient(to bottom right,
+            rgb(255, 255, 255) 0%,
+            rgb(245, 240, 254) 30%,
+            rgb(236, 228, 253) 65%,
+            rgb(229, 220, 252) 100%);
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    padding: 10px 20px;
+    flex-grow: 1;
+    padding-bottom: 90px;
+}
+
+#project-container::-webkit-scrollbar {
+    width: 5px;
+}
+
+#project-container::-webkit-scrollbar-thumb {
+    background-color: rgb(185, 172, 246);
+    border-radius: 3rem;
+}
+
+#page-info-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: space-between;
+    align-items: center;
+    font-family: "Poppins", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+
+
+#account-info-container {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 20px;
+    max-width: 120%;
+}
+
+#account-info-container h5 {
+    background-color: white;
+    border-radius: 0.5rem;
+    border: 1px solid lightgrey;
+    width: 100px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 10px;
+}
+
+#page-info-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: "Poppins", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+
+#detail-container {
+    margin-top: 20px;
+}
+
+#answer-heading {
+    color: grey;
+    font-size: 0.75rem;
+    margin-top: 5px;
+}
+
+#projects {
+    height: 100vh;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: 10px 5px 90px 5px;
+}
+
+#add-project-container {
+    width: 100%;
+    height: 30px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding-right: 50px;
+
+}
+
+#add-project-btn {
+    height: inherit;
+    width: 100px;
+    border: none;
+    border-radius: 0.25rem;
+    color: white;
+    background: linear-gradient(135deg, #A855F7 0%, #7C3AED 55%, #5B21B6 100%);
+}
+#add-project-btn:hover {
+    background-color: #3b0692;
+}
+
+#add-project-btn:active {
+    background-color: #100128;
+}
+.project {
+    background-color: white;
+    min-height: 280px;
+    max-height: 350px;
+    width: 100%;
+    padding: 5px;
+    font-family: "Poppins";
+    border-radius: 0.5rem;
+}
+
+.project h3 {
+    color: rgb(132, 0, 255);
+}
+
+.project p {
+    background-color: rgb(205, 157, 238);
+    border-radius: 0.5rem;
+    margin: 5px;
+    padding: 5px;
+}
+
+.project span {
+    color: rgb(132, 0, 255);
+
+}

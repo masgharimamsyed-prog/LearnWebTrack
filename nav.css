@@ -112,7 +112,7 @@
     width: 100%;
     height: inherit;
     background-image: url("./assets/nav-bar/bottom-nav-bg.png");
-    background-size: contain;
+    background-size: cover;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
