@@ -137,7 +137,13 @@ let rightbar = document.querySelector("#right-side-bar");
 
 openBtn.addEventListener("click", () => {
     rightbar.classList.add("display");
-    console.dir(rightbar);
+
+})
+
+/* right bar close button */
+let closeBtn = document.querySelector("#right-bar-close-button");
+closeBtn.addEventListener("click", () => {
+    rightbar.classList.remove("display");
 })
 
 

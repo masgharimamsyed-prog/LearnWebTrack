@@ -5,15 +5,16 @@
 }
 
 #right-side-bar {
-    min-width: 200px;
-    max-width: 210px;
+    width: 270px;
     padding: 0px 10px;
     height: 100vh;
-    background-color: rgb(240, 236, 251);
+    background-color: rgb(231, 223, 252);
+    font-optical-sizing: auto;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
     overflow: hidden;
+    padding-bottom: 70px;
 }
 
 .toast {
@@ -125,12 +126,12 @@ button {
 }
 
 .notes-card {
-    padding: 3px;
+    padding: 5px;
     color: black;
     margin-top: 5px;
     border-radius: 0.25rem;
     font-size: 0.5rem;
-    text-align: right;
+    text-align: left;
     width: 100%;
 
 
@@ -144,8 +145,7 @@ button {
 
 .notes-card-para {
     color: grey;
-    max-width: 130px;
-    min-width: 130px;
+    width: 130px;
     overflow: hidden;
     border: none;
     font-size: 0.65rem;
@@ -160,7 +160,9 @@ button {
 .notes-card-para:focus {
     outline: none;
 }
-
+.notes-card div{
+    text-align: right;
+}
 .js-badge {
     display: flex;
     flex-wrap: wrap;
@@ -285,8 +287,9 @@ button {
     font-size: 0.75rem;
     width: 100%;
 }
-#right-bar-open-button{
-    width:150px;
+
+#right-bar-open-button {
+    width: 150px;
     border-radius: 0.25rem;
     background-color: #5B21B6;
     color: white;
@@ -294,26 +297,47 @@ button {
     font-size: 1.25rem;
     display: none;
 }
-#right-bar-open-button:hover{
+
+#right-bar-open-button:hover {
     background-color: #3b0692;
 }
-#right-bar-open-button:active{
+
+#right-bar-open-button:active {
     background-color: #100128;
 }
 
+#right-bar-close-button {
+    width: 150px;
+    border-radius: 0.25rem;
+    background-color: #ec5a69;
+    color: white;
+    height: 30px;
+    font-size: 1.25rem;
+    display: none;
+}
 
+#right-bar-close-button:hover {
+    background-color: #ab1010;
+}
 
+#right-bar-close-button:active {
+    background-color: #280101;
+}
 
 @media (max-width:770px) {
-    #right-bar-open-button {
+
+    #right-bar-open-button,
+    #right-bar-close-button {
         display: block;
     }
 
     #right-side-bar {
         display: none;
+        min-width: 70% !important;
+        z-index: 3;
     }
 }
 
 .display {
-    display: flex;
+    display: flex !important;
 }

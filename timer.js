@@ -15,7 +15,7 @@ startBtn.addEventListener("click", (event) => {
     totalMins = totalTime.slice(3, 5);
     totalSecs = totalTime.slice(6, 8);
 
-    console.log(totalHours,totalMins,totalSecs);
+    console.log(totalHours, totalMins, totalSecs);
 
     let secs = Number((totalHours * 3600)) + Number((totalMins * 60)) + Number((totalSecs));
     runningTime(secs, event.target.parentElement.firstElementChild);
@@ -55,11 +55,12 @@ stopBtn.addEventListener("click", () => {
 resetBtn.addEventListener("click", () => {
     clearInterval(id);
     dispalyDiv.innerText = `${totalHours}:${totalMins}:${totalSecs}`;
-    dispalyDiv.style.color="white";
+    dispalyDiv.style.color = "white";
 })
 
 
 editBtn.addEventListener("click", () => {
+    clearInterval(id);
     let imagHr = prompt("Enter Hours....");
     let imagMin = prompt("Enter Minutes...");
     let imagSec = prompt("Enter Seconds....");
@@ -69,12 +70,12 @@ editBtn.addEventListener("click", () => {
         imagHr = prompt("Enter Hours....");
 
     }
-    while (imagMin < 0 ||imagMin>=60) {
+    while (imagMin < 0 || imagMin >= 60) {
         alert("wrong input Min,Min>0 and Min<60 input again");
         imagHr = prompt("Enter Mins....");
 
     }
-    while (imagSec< 0 ||imagSec>=60) {
+    while (imagSec < 0 || imagSec >= 60) {
         alert("wrong input sec,sec>0 and sec<60 input again");
         imagHr = prompt("Enter sec....");
 
@@ -88,10 +89,10 @@ editBtn.addEventListener("click", () => {
     if (imagSec < 10) {
         imagSec = "0" + imagSec;
     }
-    
+
 
     dispalyDiv.innerText = `${imagHr}:${imagMin}:${imagSec}`;
- 
+
 })
 
 

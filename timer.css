@@ -68,7 +68,7 @@ body {
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    height: 400px;
+    height: 200px;
     padding: 10px;
     width: 50%;
     margin: 20px auto;
@@ -82,6 +82,7 @@ body {
 
 .time-display {
     width: 100%;
+
     border-radius: 0.5rem;
     display: flex;
     justify-content: center;
@@ -152,4 +153,10 @@ body {
 }
 .edit:active{
     background-color: grey;
+}
+
+@media (max-width:690px){
+    .time-display{
+        font-size: 2rem ;
+    }
 }

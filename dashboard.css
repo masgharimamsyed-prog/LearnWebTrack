@@ -27,6 +27,7 @@ body {
     font-style: normal;
     padding: 10px 20px;
     flex-grow: 1;
+    padding-bottom: 150px;
 }
 
 #dashboard-container::-webkit-scrollbar {
@@ -328,6 +329,7 @@ body {
     grid-template-columns: 1fr 1fr;
     gap: 10px;
     margin: 10px 0;
+    margin-bottom: 40px;
 }
 
 #progress-overview {
@@ -419,4 +421,6 @@ body {
         margin: 10px 10px;
     }
 }
+
+
 
