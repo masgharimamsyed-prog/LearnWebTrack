@@ -111,9 +111,8 @@
 #bottom-dashboard-item-container {
     width: 100%;
     height: inherit;
-    /* background-image: url("./assets/nav-bar/bottom-nav-bg.png");
-    background-size: contain; */
-    background: transparent;
+    background-image: url("./assets/nav-bar/bottom-nav-bg.png");
+    background-size: contain;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
