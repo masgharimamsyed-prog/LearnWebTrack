@@ -145,7 +145,7 @@ body {
     background-color: white;
     display: grid;
     grid-template-rows: repeat(10, 1fr);
-    border: 1px solid lightgray;
+    
 }
 
 .cards {
