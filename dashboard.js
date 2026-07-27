@@ -50,9 +50,15 @@ if (localStorage.getItem("total-topics-cover")) {
 if (localStorage.getItem("overall-sec")) {
     let overallSec = localStorage.getItem("overall-sec");
     document.querySelector('#study-time').innerText = Math.floor(overallSec / 3600) + "Hrs";
-    document.querySelector('#min-no').innerText = Math.floor(Math.floor(overallSec%3600)/60);
+    document.querySelector('#min-no').innerText = Math.floor(Math.floor(overallSec % 3600) / 60);
     document.querySelector('#sec-no').innerText = Math.floor(overallSec % 60);
 
+}
+
+/* project */
+if (localStorage.getItem("projects")) {
+    document.querySelector("#project-no").innerText = localStorage.getItem("projects");
+    document.querySelector("#project-on-main").innerText = localStorage.getItem("projects");
 }
 
 

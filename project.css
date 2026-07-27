@@ -91,11 +91,13 @@ body {
 }
 
 #projects {
-    height: 100vh;
+    min-height: 100vh;
     width: 100%;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    padding: 10px 5px 90px 5px;
+    display: flex;
+    align-items: start;
+    justify-content: flex-start;
+    gap: 10px;
+    flex-wrap: wrap;
 }
 
 #add-project-container {
@@ -105,6 +107,7 @@ body {
     justify-content: flex-end;
     align-items: center;
     padding-right: 50px;
+    margin: 10px 0px;
 
 }
 
@@ -116,6 +119,7 @@ body {
     color: white;
     background: linear-gradient(135deg, #A855F7 0%, #7C3AED 55%, #5B21B6 100%);
 }
+
 #add-project-btn:hover {
     background-color: #3b0692;
 }
@@ -123,11 +127,10 @@ body {
 #add-project-btn:active {
     background-color: #100128;
 }
+
 .project {
     background-color: white;
-    min-height: 280px;
-    max-height: 350px;
-    width: 100%;
+    width: 240px;
     padding: 5px;
     font-family: "Poppins";
     border-radius: 0.5rem;
@@ -142,6 +145,10 @@ body {
     border-radius: 0.5rem;
     margin: 5px;
     padding: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    min-height: 60%;
 }
 
 .project span {
