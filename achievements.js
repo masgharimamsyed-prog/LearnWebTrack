@@ -30,11 +30,11 @@ if (localStorage.getItem("node-progress") >= 100) {
 }
 
 if (localStorage.getItem("exp-progress") >= 100) {
-    document.querySelector("#express-img").src = "./assets/achievements/exp-unlock.jpg";
+    document.querySelector("#express-img").src = "./assets/achievements/exp-unlock.png";
 }
 
 if (localStorage.getItem("mongo-progress") >= 100) {
-    document.querySelector("#mongodb-img").src = "./assets/achievements/mongo-unlock.jpg";
+    document.querySelector("#mongodb-img").src = "./assets/achievements/mongo-unlock.png";
 }
 
 if ((localStorage.getItem("html-progress") >= 100)&&(localStorage.getItem("css-progress") >= 100)&&(localStorage.getItem("js-progress") >= 100)&&(localStorage.getItem("react-progress") >= 100)) {
