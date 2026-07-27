@@ -35,10 +35,9 @@
             <li class="dashboard-item"><a href="./roadmap.html"><i class="fa-solid fa-timeline"></i>Roadmap</a></li>
             <li class="dashboard-item"><a href="./topics.html"><i class="fa-solid fa-list-check"></i>Topics</a></li>
             <li class="dashboard-item"><a href="./lectures.html"><i class="fa-solid fa-video"></i>Lectures</a></li>
-            <li class="dashboard-item"><a href=""><i class="fa-solid fa-stopwatch"></i>Study Timer</a></li>
+            <li class="dashboard-item"><a href="./timer.html"><i class="fa-solid fa-stopwatch"></i>Study Timer</a></li>
             <li class="dashboard-item"><a href="./achievements.html"><i class="fa-solid fa-award"></i>Achievements</a>
             </li>
-            <li class="dashboard-item"><a href=""><i class="fa-solid fa-chart-line"></i>Study Statistics</a></li>
             <li class="dashboard-item"><a href=""><i class="fa-solid fa-bars-progress"></i>Projects</a></li>
         </ul>
     </nav>
@@ -46,10 +45,13 @@
     <!--Dashboard-->
     <div id="dashboard-container">
         <div id="page-info-container">
-            <h1>Dashboard</h1>
+            <div>
+                <h1>Dashboard</h1>
+            </div>
+
             <div id="account-info-container">
                 <h5>Asghar Imam</h5>
-                <div id="account-img"></div>
+                <button id="right-bar-open-button">Tools</button>
             </div>
         </div>
 
@@ -62,9 +64,9 @@
             <!--progress -->
             <div id="overall-progress-facts">
                 <nav>
-                    <div class="symbol" style=" background-color: rgb(213, 143, 245); 
-     color:rgb(80, 3, 106)">
-                        <i class="fa-solid fa-circle-info"></i>
+                    <div class="symbol" style=" background-color: #dab8f9; 
+      color: #8407f8;">
+                        <i class="fa-solid fa-chart-line"></i>
                     </div>
                     Learning Progress
                 </nav>
@@ -78,16 +80,16 @@
 
                 <div>
                     <ul>
-                        <li>Total Lectures completed:<span class="">0</span></li>
-                        <li>Total Projects Made:<span class="">0</span></li>
-                        <li>Total Quiz attempt:<span class="">0</span></li>
+                        <li>Total Lectures Have:<span>24</span></li>
+                        <li>Total Projects Maded:<span>0</span></li>
+                        <li>Total Quizz's attempt:<span class="quiz-attempt-no">0</span></li>
                     </ul>
                 </div>
 
                 <footer>
                     <div class="symbol" style=" 
      color:rgb(80, 3, 106)">
-                        <i class="fa-regular fa-clock"></i>
+                        <i class="fa-solid fa-asterisk"></i>
                     </div>
                     Great Job !Keep it up to achieve your goal
                 </footer>
@@ -98,22 +100,22 @@
                 <nav>
                     <div class="symbol" style=" background-color: rgb(213, 143, 245); 
      color:rgb(80, 3, 106)">
-                        <i class="fa-regular fa-clock"></i>
+                        <i class="fa-solid fa-hourglass-half"></i>
                     </div>
-                    Study Hours
+                    Total Study Time
                 </nav>
 
                 <div id="study-time">
-                    12:15:11
+                   0 Hr
                 </div>
 
-                <span id="hr">
-                    <div>0</div>
-                    <div>Hours</div>
-                </span>
-                <span id="min">
-                    <div>0</div>
+                <span>
+                    <div id="min-no">0</div>
                     <div>Minutes</div>
+                </span>
+                <span>
+                    <div id="sec-no">0</div>
+                    <div>Seconds</div>
                 </span>
 
             </div>
@@ -124,9 +126,9 @@
 
             <!--lectures  card-->
             <div class="small-card" id="quiz-attempt">
-                <div class="symbol" style=" background-color: rgb(213, 143, 245); 
-     color:rgb(80, 3, 106)">
-                    <i class="fa-regular fa-clock"></i>
+                <div class="symbol" style=" background-color:#EEF9D7; 
+     color: #65A30D">
+                    <i class="fa-solid fa-book-open"></i>
                 </div>
                 <h6 class="card-main-heading">Total Lectures</h6>
                 <span class="small-card-fact">24</span>
@@ -135,12 +137,17 @@
 
             <!--quiz attempt compeleted card-->
             <div class="small-card" id="quiz-attempt">
-                <div class="symbol" style=" background-color: rgb(241, 245, 143); 
-     color:rgb(16, 14, 0)">
-                    <i class="fa-regular fa-clock"></i>
+                <div>
+                    <div class="symbol" style=" background-color: #FFF3B8; 
+     color:#CA8A04">
+                        <i class="fa-solid fa-calendar-check"></i>
+                    </div>
+                    <button class="badge" id="quiz-change-btn"><i class="fa-solid fa-arrows-rotate"></i></button>
+
                 </div>
                 <h6 class="card-main-heading">Quiz attempt</h6>
-                <span class="small-card-fact" id="quiz-attempt-no">0</span>
+                <span class="small-card-fact quiz-attempt-no">0</span>
+
 
             </div>
             <!--Total topics card-->
@@ -150,7 +157,7 @@
                     <i class="fa-brands fa-artstation"></i>
                 </div>
                 <h6 class="card-main-heading">Total Topics</h6>
-                <span class="small-card-fact" id="lecture-no">15</span>
+                <span class="small-card-fact">15</span>
             </div>
 
 
@@ -158,10 +165,10 @@
             <div class="small-card" id="quiz-attempt">
                 <div class="symbol" style=" background-color: rgb(143, 243, 245); 
      color:rgb(3, 106, 101)">
-                    <i class="fa-regular fa-clock"></i>
+                    <i class="fa-solid fa-hashtag"></i>
                 </div>
                 <h6 class="card-main-heading">Total Topics Cover</h6>
-                <span class="small-card-fact" id="quiz-attempt-no">0</span>
+                <span class="small-card-fact" id="total-topics-cover">0</span>
 
             </div>
             <!--total project compeleted card-->
@@ -171,7 +178,7 @@
                     <i class="fa-solid fa-coins"></i>
                 </div>
                 <h6 class="card-main-heading">Project Made</h6>
-                <span class="small-card-fact" id="lecture-no">0</span>
+                <span class="small-card-fact">0</span>
             </div>
             <!--daily goal card-->
             <div id="daily-goal" class="small-card">
@@ -180,11 +187,11 @@
      color:red;">
                         <i class="fa-solid fa-bullseye"></i>
                     </div>
-                    <button class="badge" id="goal-change-btn">Change</button>
+                    <button class="badge" id="goal-change-btn"><i class="fa-solid fa-pen"></i></button>
                 </div>
 
                 <h6 class="card-main-heading"> Daily Goal</h6>
-                <span class="small-card-fact" id="daily-goal-no">4hrs</span>
+                <span class="small-card-fact" id="daily-goal-no">4</span><p></p>
 
             </div>
 
@@ -202,18 +209,22 @@
                     <h6>0%</h6>
                 </div>
                 <div class="bar" id="html-bar">HTML</div>
+                <div class="bar" id="css-bar">CSS</div>
+                <div class="bar" id="boot-bar">Bootstrap</div>
+                <div class="bar" id="tail-bar">Tailwind</div>
+                <div class="bar" id="api-bar">API</div>
                 <div class="bar" id="js-bar">JS</div>
+                <div class="bar" id="ts-bar">TS</div>
                 <div class="bar" id="react-bar">React</div>
                 <div class="bar" id="next-bar">Next</div>
                 <div class="bar" id="node-bar">Node</div>
-                <div class="bar" id="express-bar">Exp</div>
+                <div class="bar" id="exp-bar">Exp</div>
                 <div class="bar" id="sql-bar">SQL</div>
                 <div class="bar" id="mongo-bar">Mongo</div>
-                <div class="bar" id="typescript-bar">TS</div>
-                <div class="bar" id="git">Git</div>
+                <div class="bar" id="git-bar">Git</div>
             </div>
             <div id="motivation-quote">
-                <h3 style="font-style: italic;">Motivation Quote ~</h3>
+                <h3 style="font-style: italic;"><sup><i class="fa-solid fa-quote-left"></i></sup>Motivation Quote ~</h3>
                 <p id="quote"></p>
                 <h5 id="author"></h5>
             </div>
@@ -224,6 +235,7 @@
 
 
     <!--Right side bar similar to all-->
+    
     <div id="right-side-bar">
         <div id="toast" class="toast">Note Add!</div>
         <div id="notes-container">
@@ -247,20 +259,16 @@
             </div>
 
             <button id="js-quiz-button"><i class="fa-solid fa-bolt"></i>Generate</button>
-            <span class="js-box-detail" class="lecture-no">Total 15 Challenges to level up</span>
+            <span class="js-box-detail" class="lecture-no">Total 30 Challenges to level up</span>
         </div>
 
 
         <div id="music-container">
 
-            <audio controls>
-                <source src="https://youtu.be/c92tUshrZ9g?si=FLkJCu-_rh2QqWUt" type="audio/mpeg">
-                Your browser does not support the audio element.
-            </audio>
-            <audio controls>
-                <source src="https://youtu.be/7GLCe1ZCjIU?si=FchRntb8E8HJO_sl" type="audio/mpeg">
-                Your browser does not support the audio element.
-            </audio>
+            <iframe width="100%" height="120px" scrolling="no" frameborder="no" allow="autoplay"
+                src="https://w.soundcloud.com/player/?url=https://soundcloud.com/arijitsinghmusic/tumhare-hi-rahenge-hum-x-phir">
+            </iframe>
+        
             <div id="music-nav">
                 <h3>Relaxing Music</h3>
             </div>
@@ -271,7 +279,7 @@
 
     <script src="dashboard.js"></script>
     <script src="rigthbar.js"></script>
-    <script src="topics.js"></script>
+
 </body>
 
 </html>

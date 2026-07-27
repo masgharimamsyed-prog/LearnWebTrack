@@ -1,0 +1,155 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    overflow-x: hidden;
+}
+
+#timer-container {
+    color: black;
+    height: 100vh;
+    overflow-y: auto;
+    overflow-x: hidden;
+    width: 70%;
+    background: linear-gradient(to bottom right,
+            rgb(255, 255, 255) 0%,
+            rgb(245, 240, 254) 30%,
+            rgb(236, 228, 253) 65%,
+            rgb(229, 220, 252) 100%);
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    padding: 10px 20px;
+    flex-grow: 1;
+}
+
+#timer-container::-webkit-scrollbar {
+    width: 5px;
+}
+
+#timer-container::-webkit-scrollbar-thumb {
+    background-color: rgb(185, 172, 246);
+    border-radius: 3rem;
+}
+
+#page-info-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: "Poppins", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+
+
+#detail-container {
+    margin-top: 20px;
+}
+
+#answer-heading {
+    color: grey;
+    font-size: 0.75rem;
+    margin-top: 5px;
+}
+
+
+
+
+.timer {
+    background-color: rgb(174, 135, 233);
+    border-radius: 0.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    height: 400px;
+    padding: 10px;
+    width: 50%;
+    margin: 20px auto;
+    gap: 10px;
+
+}
+
+.timer p {
+    display: none;
+}
+
+.time-display {
+    width: 100%;
+    border-radius: 0.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(109, 2, 249);
+    height: 60%;
+    font-size: 3rem;
+    color: white;
+    font-weight: bolder;
+}
+
+.start-timer {
+    background-color: lightgreen;
+    border: none;
+    padding: 5px 10px;
+    color: white;
+    border-radius: 0.5rem;
+}
+
+.start-timer:hover {
+    background-color: rgb(69, 154, 69);
+}
+
+.start-timer:active {
+    background-color: rgb(22, 84, 22);
+}
+
+.stop-timer {
+    background-color: rgb(249, 115, 115);
+    border: none;
+    padding: 5px 10px;
+    color: white;
+    border-radius: 0.5rem;
+}
+
+.stop-timer:hover {
+    background-color: rgb(120, 32, 32);
+}
+
+.stop-timer:active {
+    background-color: rgb(67, 12, 12);
+}
+
+
+.reset-timer {
+    color: white;
+    background-color: rgb(99, 213, 255);
+    border: none;
+    padding: 5px 10px;
+    border-radius: 0.5rem;
+}
+
+.reset-timer:hover {
+    background-color: rgb(21, 145, 133);
+}
+
+.reset-timer:active {
+    background-color: rgb(4, 65, 58);
+}
+
+.edit {
+    border: none;
+    padding: 5px 10px;
+    border-radius: 0.5rem;
+}
+.edit:hover{
+    background-color: lightgray;
+}
+.edit:active{
+    background-color: grey;
+}

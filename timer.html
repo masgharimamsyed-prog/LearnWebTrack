@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learn Web Track - Grow With Consious</title>
+    <link rel="icon" href="./assets/nav-bar/main-logo.png">
+    <link rel="stylesheet" href="timer.css">
+    <link rel="stylesheet" href="nav.css">
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.0/css/all.min.css"
+        integrity="sha512-ApSLB1Pd3/bZN8fWB/RG9YhN/7bd9Hkf3AGaE2mPfebjrxagjuBtx2GcgdqIlJkUzwylBo61r9Xa9NmgBI0swA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <!--nav bar (similar to all pages)-->
+    <nav id="nav-bar">
+        <div id="main-container"><img src="./assets/nav-bar/main-logo.png">
+            <h1 id="main-heading">Learn<span style="color: rgb(147, 127, 246)">Web</span>Track</h1>
+        </div>
+        <ul id="dashboard-item-container">
+            <li class="dashboard-item"><a href="./index.html"><i class="fa-solid fa-house"></i>DashBoard</a></li>
+            <li class="dashboard-item"><a href="./roadmap.html"><i class="fa-solid fa-timeline"></i>Roadmap</a></li>
+            <li class="dashboard-item"><a href="./topics.html"><i class="fa-solid fa-list-check"></i>Topics</a></li>
+            <li class="dashboard-item"><a href="./lectures.html"><i class="fa-solid fa-video"></i>Lectures</a></li>
+            <li class="dashboard-item" style=" background: linear-gradient(90deg,
+            rgb(92, 62, 240),
+            rgb(129, 97, 255));"><a href=""><i class="fa-solid fa-stopwatch"></i>Study Timer</a></li>
+            <li class="dashboard-item"><a href="./achievements.html"><i class="fa-solid fa-award"></i>Achievements</a>
+            </li>
+            <li class="dashboard-item"><a href=""><i class="fa-solid fa-bars-progress"></i>Projects</a></li>
+        </ul>
+    </nav>
+
+    <!--Dashboard-->
+    <div id="timer-container">
+        <div id="page-info-container">
+            <h1>Study Timer</h1>
+        </div>
+        <div id="detail-container">
+            <h3 id="question-heading">Track Your Timer Investment <i class="fa-solid fa-hourglass-half"></i></h3>
+            <h3 id="answer-heading">That time also add in the total study time on DashBoard. </h3>
+        </div>
+
+
+        <!--all timer-->
+            <div class="timer">
+                <div class="time-display">
+                    00:05:00
+                </div>
+                
+                <button class="start-timer">Start</button>
+                <button class="stop-timer">Stop</button>
+                <button class="reset-timer">Reset</button>
+                <button class="edit">edit</button>
+            </div>
+
+
+
+
+
+
+
+    </div>
+    <script src="timer.js"></script>
+
+</body>
+
+</html>

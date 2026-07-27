@@ -54,7 +54,19 @@ function generatebg() {
 
 /* END sticky note */
 
+
 /* js quiz code */
+
+let quizAttemptNoBoxes = document.querySelectorAll('.quiz-attempt-no');
+for (let quizAttemptNo of quizAttemptNoBoxes) {
+    if (localStorage.getItem("quiz-no")) {
+        quizAttemptNo.innerText = localStorage.getItem('quiz-no');
+    }
+    else {
+        quizAttemptNo.innerText = "0";
+    }
+}
+
 // challenges.js
 // Array of 15 coding challenge objects, each with only a "description" field.
 
@@ -73,22 +85,60 @@ const challenges = [
     { description: "Write a function sumDigits(n) that returns the sum of all digits in a positive integer n." },
     { description: "Write a function myMap(arr, callback) that behaves like Array.prototype.map(), without using the built-in map method." },
     { description: "Write a function myPromiseAll(promises) that behaves like Promise.all(), resolving with an array of results or rejecting on the first failure." },
+    { description: "Write a function twoSum(nums, target) that returns the indices of two numbers in the array that add up to target." },
+    { description: "Write a function reverseString(str) that returns the input string reversed." },
+    { description: "Write a function fizzBuzz(n) that returns an array of strings from 1 to n, replacing multiples of 3 with 'Fizz', multiples of 5 with 'Buzz', and multiples of both with 'FizzBuzz'." },
+    { description: "Write a function findMax(arr) that returns the largest number in an array of numbers." },
+    { description: "Write a function isPalindrome(str) that returns true if the string reads the same forwards and backwards, ignoring case and spaces." },
+    { description: "Write a function flattenArray(arr) that flattens an arbitrarily nested array into a single-level array." },
+    { description: "Write a function countChars(str) that returns an object mapping each character in the string to how many times it appears." },
+    { description: "Write a function debounce(fn, delay) that returns a debounced version of fn, which only runs after 'delay' ms have passed since the last call." },
+    { description: "Write a function removeDuplicates(arr) that returns a new array with duplicate values removed, preserving order." },
+    { description: "Write a function deepClone(obj) that returns a deep copy of a nested object or array." },
+    { description: "Write a function groupBy(arr, key) that groups an array of objects into an object of arrays, keyed by the given property." },
+    { description: "Write a class EventEmitter with methods on(event, callback), off(event, callback), and emit(event, ...args)." },
+    { description: "Write a function sumDigits(n) that returns the sum of all digits in a positive integer n." },
+    { description: "Write a function myMap(arr, callback) that behaves like Array.prototype.map(), without using the built-in map method." },
+    { description: "Write a function myPromiseAll(promises) that behaves like Promise.all(), resolving with an array of results or rejecting on the first failure." },
     { description: "Write a function twoSum(nums, target) that returns the indices of two numbers in the array that add up to target." }
 ];
 
 let quizBtn = document.querySelector("#js-quiz-button");
-let quizAttemptNo = document.querySelector('#quiz-attempt-no');
 quizBtn.addEventListener("click", async () => {
-    quizAttemptNo.innerText = `${Number(quizAttemptNo.innerText) + 1}`;
-    alert(challenges[Number(quizAttemptNo.innerText)].description);
+    if (quizAttemptNoBoxes[0].innerText <= 30) {
+        for (let quizAttemptNo of quizAttemptNoBoxes) {
+            quizAttemptNo.innerText = `${Number(quizAttemptNo.innerText) + 1}`;
+        }
+        console.log("as");
 
+        alert(challenges[Number(quizAttemptNoBoxes[0].innerText)].description);
+        localStorage.setItem("quiz-no", quizAttemptNoBoxes[0].innerText);
 
-
+    }
+    else {
+        alert("you completed all the challenges");
+    }
 
 });
+
+/*reset quiz no */
+let changeQuiz = document.querySelector("#quiz-change-btn");
+changeQuiz.addEventListener("click", () => {
+    localStorage.setItem("quiz-no", "0");
+    for (let quizAttemptNo of quizAttemptNoBoxes) {
+        quizAttemptNo.innerText = localStorage.getItem('quiz-no');
+    }
+})
 /* END Js quiz box */
 
+/* right bar open btn*/
+let openBtn = document.querySelector("#right-bar-open-button");
+let rightbar = document.querySelector("#right-side-bar");
 
+openBtn.addEventListener("click", () => {
+    rightbar.classList.add("display");
+    console.dir(rightbar);
+})
 
 
 

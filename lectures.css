@@ -9,6 +9,7 @@ body {
     overflow: hidden;
 }
 
+
 #lectures-container {
     width: 70%;
     height: 100vh;
@@ -110,7 +111,7 @@ body {
 
 .lectures-row::-webkit-scrollbar {
     z-index: -1;
-    height: 5px;
+    height: 10px;
     background: transparent;
 }
 
