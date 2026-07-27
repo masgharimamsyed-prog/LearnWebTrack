@@ -66,13 +66,13 @@ A modern web application that helps aspiring developers organize, track, and vis
 ### 🏠 Dashboard
 
 <p align="center">
-<img src="assets/screenshots/dashboard.png" width="900">
+<img src="assets/screenshots/dashboard.png" width="500">
 </p>
 
 ### 🏆 Achievements
 
 <p align="center">
-<img src="assets/screenshots/achievement.png" width="900">
+<img src="assets/screenshots/achievements.png" width="500">
 </p>
 
 ---
