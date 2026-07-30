@@ -240,13 +240,12 @@ body {
 }
 
 .tech-slider {
-    width:95% ;
+    width:auto;
     overflow: hidden;
     padding: 12px 0;
     background: #d59fff;
     border-radius: 12px;
     border: 1px solid rgba(255, 255, 255, .08);
-     margin: 10px
 }
 
 .tech-track {
